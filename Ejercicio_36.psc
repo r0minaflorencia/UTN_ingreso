@@ -3,37 +3,38 @@
 //Mostrar por pantalla al final del programa a la lista de los números que fueron ingresados, cuantos fueron, la suma y el promedio.
 Algoritmo Ejercicio_36
 	
-	Definir cantidad, n, suma, promedio Como Real;
+	Definir num, suma, aux Como Real;
+	Definir longitudVector Como Entero;
+	Dimension vectorDeNumeros[5]
 	Definir input Como Caracter;
-	Definir vectorDeNumeros Como Entero
 	
-	ingresos <- 0;
-	n <- 0;
+	aux <- 0;
+	num <- 0;
 	suma <- 0;
 	promedio <- 0;
-	input <- "";
 	
-	Repetir
+	Para i <- 1 Hasta 5 Hacer
+		Escribir "Ingresa un valor de tipo Real distinto a cero";
+		Leer num;
 		
-		Escribir "Ingresa ", i + 1, "valor/es de tipo Real distinto a cero";
-		Leer input, n
-		
-		Si input == "Final" Entonces
-			ingresos <- 20;
-		FinSi
-		
-		Si n <> 0 Entonces
-			
-			suma <- suma + n;
-			
-			
+		Si num <> 0 Entonces
+			vectorDeNumeros[i] <- num;
 		SiNo
-			ingresos <- ingresos - 1;
+			i <- (i-1)
 		FinSi
+		
+		Escribir "Para finalizar el ingreso de valores escriba: Final ";
+		Leer input;
+		Si input == "Final" Entonces
+			i <- (5)
+		FinSi
+		
+	FinPara
 	
-	Hasta Que ingresos == 20 ;
-	
-	Escribir "Suma: ", suma
-	Escribir "Promedio: ", promedio
+
+	Escribir "Suma: ", suma;
+	Escribir "Promedio: ", promedio;
+	Escribir "Lista de valores ingresados: ";
+
 	
 FinAlgoritmo

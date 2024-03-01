@@ -16,13 +16,13 @@ Algoritmo Ejercicio_28
 	promedio <- 0;
 	
 	Repetir
-		Escribir "Ingresa ", cantidad, " valor/es entero > 999 y < 10000: "
-        Leer n
+		Escribir "Ingresa ", cantidad, " valor/es entero > 999 y < 10000: ";
+        Leer n;
 		
         Si n >= 999 Y n <= 10000 Entonces
 			subtotal <- subtotal + n;
 			
-            Si (n % 2 <> 0) Entonces
+            Si (n mod 2 <> 0) Entonces
 				cantidadImpares <- cantidadImpares + 1;
             Sino
 				cantidadPares <- cantidadPares + 1;
@@ -31,16 +31,16 @@ Algoritmo Ejercicio_28
 			cantidad <- cantidad - 1;
             Escribir "Subtotal: ", subtotal;
         Sino
-            Escribir "El número ingresado no se tomará en cuenta por estar fuera del rango solicitado."
+            Escribir "El número ingresado no se tomará en cuenta por estar fuera del rango solicitado.";
 			n <- 0;
 		FinSi
 		
 		total <- subtotal;
 	Hasta Que cantidad == 0;
 	
-    Mostrar "Total: ", total
-    Mostrar "Promedio: ", (total / 20)
-    Mostrar "Cantidad de números pares: ", cantidadPares
-    Mostrar "Cantidad de números impares: ", cantidadImpares
+    Mostrar "Total: ", total;
+    Mostrar "Promedio: ", (total / 20);
+    Mostrar "Cantidad de números pares: ", cantidadPares;
+    Mostrar "Cantidad de números impares: ", cantidadImpares;
 	
 FinAlgoritmo
