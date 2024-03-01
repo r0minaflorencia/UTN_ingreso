@@ -5,9 +5,10 @@
 Algoritmo Ejercicio_28
 	
 	Escribir "Ejercicio n° 28";
-	Definir cantidad, total, subtotal, cantidadPares, cantidadImpares, promedio Como Entero;
+	Definir num, cantidad, total, subtotal, cantidadPares, cantidadImpares, promedio Como Entero;
 	
 	//inicializo las variables:
+	num <- 0;
 	cantidad <- 20;
 	total <- 0;
 	subtotal <- 0;
@@ -17,12 +18,12 @@ Algoritmo Ejercicio_28
 	
 	Repetir
 		Escribir "Ingresa ", cantidad, " valor/es entero > 999 y < 10000: ";
-        Leer n;
+        Leer num;
 		
-        Si n >= 999 Y n <= 10000 Entonces
-			subtotal <- subtotal + n;
+        Si num >= 999 Y num <= 10000 Entonces
+			subtotal <- subtotal + num;
 			
-            Si (n mod 2 <> 0) Entonces
+            Si (num mod 2 <> 0) Entonces
 				cantidadImpares <- cantidadImpares + 1;
             Sino
 				cantidadPares <- cantidadPares + 1;
@@ -32,7 +33,7 @@ Algoritmo Ejercicio_28
             Escribir "Subtotal: ", subtotal;
         Sino
             Escribir "El número ingresado no se tomará en cuenta por estar fuera del rango solicitado.";
-			n <- 0;
+			num <- 0;
 		FinSi
 		
 		total <- subtotal;
