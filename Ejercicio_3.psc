@@ -3,7 +3,7 @@ Algoritmo Ejercicio_3
 	
 	Escribir "Ejercicio n°3";
 	Definir long, area, radio Como Real;
-	Escribir "Ingresa el radio del circulo: ";
+	Escribir Sin Saltar "Ingresa el radio del circulo: ";
 	Leer radio;
 	
 	//para calcular la longitud usaré la siguiente fórmula: longitud = 2 * pi * radio.

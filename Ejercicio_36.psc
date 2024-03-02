@@ -29,7 +29,7 @@ Algoritmo Ejercicio_36
 		
 		Segun opcion Hacer
 			"a":
-				Escribir "Ingresa un valor de tipo Real distinto a cero";
+				Escribir Sin Saltar "Ingresa un valor de tipo Real distinto a cero: ";
 				Leer valorReal;
 				
 				Si valorReal <> 0 Entonces

@@ -26,6 +26,7 @@ Algoritmo Ejercicio_45
 		Leer opcion;
 		
 		Segun opcion Hacer
+			
 			1:
 				Escribir Sin Saltar "Ingresar el primer número: ";
 				Leer n1;
@@ -37,18 +38,14 @@ Algoritmo Ejercicio_45
 			2:
 				cuadrado <- (suma * suma);
 				Escribir suma, " al cuadrado = ", cuadrado;
-				
 			3:
 				promedio <- (suma / 2);
 				Escribir "Promedio: ", promedio;
-				
 			4:
-				
 				Escribir "Nros ingresados: ", n1, " y ", n2;
 				Escribir "Suma: ", suma;
 				Escribir "Suma al cuadrado: ", cuadrado;
 				Escribir "Promedio: ", (suma / 2);
-				
 			5:
 				Escribir "Fin del programa";
 				salir <- Verdadero;

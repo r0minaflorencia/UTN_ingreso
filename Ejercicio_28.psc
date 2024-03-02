@@ -5,6 +5,8 @@
 Algoritmo Ejercicio_28
 	
 	Escribir "Ejercicio n° 28";
+	
+	//defino variables:
 	Definir num, cantidad, total, subtotal, cantidadPares, cantidadImpares, promedio Como Entero;
 	
 	//inicializo las variables:
